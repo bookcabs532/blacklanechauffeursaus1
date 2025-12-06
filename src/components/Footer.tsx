@@ -8,7 +8,11 @@ const Footer: React.FC = () => {
           <div className="col-span-2 lg:col-span-1 mb-8 md:mb-0">
             <h3 className="text-xl font-bold text-brand-gold tracking-wider mb-4">BLACKLANEAUS</h3>
             <p className="text-sm">Your Australian professional chauffeur service.</p>
-            <div className="flex space-x-4 mt-6">
+            <div className="mt-6 mb-4">
+              <p className="text-sm"><strong>Phone:</strong> +61 417 833 137</p>
+              <p className="text-sm"><strong>Email:</strong> info@blacklanechauffeurs.com.au</p>
+            </div>
+            <div className="flex space-x-4">
               <a href="#" className="hover:text-white transition-colors"><i className="fab fa-twitter fa-lg"></i></a>
               <a href="#" className="hover:text-white transition-colors"><i className="fab fa-facebook-f fa-lg"></i></a>
               <a href="#" className="hover:text-white transition-colors"><i className="fab fa-instagram fa-lg"></i></a>

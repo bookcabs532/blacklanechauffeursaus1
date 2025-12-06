@@ -49,9 +49,11 @@ const BookingForm: React.FC = () => {
 
       await emailjs.send(
         'service_7h348ek', // Service ID - replace with actual service ID
-        'template_6i8d9ea', // Template ID
+        'template_6bmemfb', // Template ID
         templateParams
       );
+
+      
 
       setSubmitMessage('Booking request sent successfully! We will contact you soon.');
       // Reset form
@@ -212,7 +214,7 @@ const BookingForm: React.FC = () => {
               name="phone"
               value={formData.phone}
               onChange={handleInputChange}
-              placeholder="+61 417 833 137"
+              placeholder=""
               className="w-full bg-gray-800 border border-gray-600 rounded-md p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-gold"
               required
             />
