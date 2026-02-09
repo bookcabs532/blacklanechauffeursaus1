@@ -6,17 +6,17 @@ const testimonials: Testimonial[] = [
   {
     quote: 'The service was impeccable from start to finish. The chauffeur was professional, courteous, and the vehicle was pristine. Highly recommended for business travel.',
     author: 'Sarah L.',
-    location: 'New York, USA',
+    location: 'Melbourne, Australia',
   },
   {
     quote: 'Our airport transfer was seamless. The flight tracking meant our driver was waiting for us despite a delay. It took all the stress out of arriving in a new city.',
     author: 'David C.',
-    location: 'London, UK',
+    location: 'Sydney, Australia',
   },
   {
     quote: 'We booked the hourly service for a special occasion and it was worth every penny. It made our night truly unforgettable. The definition of luxury.',
     author: 'Michelle T.',
-    location: 'Paris, France',
+    location: 'Brisbane, Australia',
   },
 ];
 
