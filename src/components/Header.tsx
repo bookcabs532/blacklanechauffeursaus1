@@ -32,6 +32,13 @@ const Header: React.FC = () => {
               ))}
             </div>
           </div>
+          <div className="hidden lg:flex items-center space-x-4 text-sm">
+            <div className="flex items-center space-x-2 text-gray-700">
+              <span className="font-medium">Contact Us:</span>
+              <i className="fas fa-phone"></i>
+              <a href="tel:0417833137" className="hover:text-black transition-colors font-semibold">0417 833 137</a>
+            </div>
+          </div>
           <div className="hidden md:block">
             <a
               href="#booking"
@@ -78,6 +85,13 @@ const Header: React.FC = () => {
             ))}
           </div>
           <div className="pt-4 pb-3 border-t border-gray-200">
+            <div className="px-4 mb-3 text-sm">
+              <div className="flex items-center space-x-2 text-gray-700">
+                <span className="font-medium">Contact Us:</span>
+                <i className="fas fa-phone"></i>
+                <a href="tel:0417833137" className="hover:text-black transition-colors font-semibold">0417 833 137</a>
+              </div>
+            </div>
              <a
               href="#booking"
               onClick={() => setIsMenuOpen(false)}
