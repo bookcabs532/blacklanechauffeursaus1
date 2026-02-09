@@ -15,8 +15,9 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold tracking-wider text-black">
-              BLACKLANE
+            <a href="#" className="text-black flex flex-col leading-none">
+              <span className="text-2xl font-bold tracking-wider">BLACKLANE</span>
+              <span className="text-sm font-medium text-gray-600 tracking-wide">Australia</span>
             </a>
           </div>
           <div className="hidden md:block">
