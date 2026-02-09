@@ -36,7 +36,7 @@ const FleetCard: React.FC<{ vehicle: Vehicle }> = ({ vehicle }) => (
     </div>
     <div className="p-6">
       <h3 className="text-2xl font-bold text-black">{vehicle.className}</h3>
-      <p className="text-brand-gold mb-4">{vehicle.name}</p>
+      <p className="text-black mb-4">{vehicle.name}</p>
       <p className="text-gray-700 mb-6">{vehicle.description}</p>
       <div className="flex items-center space-x-6 text-gray-700">
         <div className="flex items-center">
@@ -58,7 +58,7 @@ const Fleet: React.FC = () => {
     <section id="fleet" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">Our Premium Fleet</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black font-serif">Our Premium Fleet</h2>
           <p className="text-gray-700 mt-4 max-w-2xl mx-auto">
             Travel in the comfort and safety of our meticulously maintained, high-spec vehicles.
           </p>

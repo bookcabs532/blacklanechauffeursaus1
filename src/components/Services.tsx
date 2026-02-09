@@ -2,17 +2,17 @@ import React from 'react';
 
 const services = [
   {
-    icon: <i className="fas fa-plane-departure text-brand-gold text-3xl"></i>,
+    icon: <i className="fas fa-plane-departure text-black text-3xl"></i>,
     title: 'Airport Transfers',
     description: 'Reliable and punctual transfers to and from all major airports. Flight tracking included.',
   },
   {
-    icon: <i className="fas fa-road text-brand-gold text-3xl"></i>,
+    icon: <i className="fas fa-road text-black text-3xl"></i>,
     title: 'City-to-City',
     description: 'Travel comfortably and productively between cities in our premium vehicles.',
   },
   {
-    icon: <i className="fas fa-clock text-brand-gold text-3xl"></i>,
+    icon: <i className="fas fa-clock text-black text-3xl"></i>,
     title: 'Hourly Service',
     description: 'Book a chauffeur by the hour for maximum flexibility, perfect for business meetings or events.',
   },
@@ -34,7 +34,7 @@ const Services: React.FC = () => {
     <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">Our Australian Chauffeur Service</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black font-serif">Our Australian Chauffeur Service</h2>
           <p className="text-gray-700 mt-4 max-w-2xl mx-auto">
             Wherever your journey takes you, count on our professional chauffeurs for a safe and comfortable ride.
           </p>

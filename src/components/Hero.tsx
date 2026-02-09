@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         />
       </div>
       <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight mb-4 font-serif">
           Your Professional Chauffeur Service
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mb-8">

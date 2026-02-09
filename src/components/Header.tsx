@@ -15,8 +15,8 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold tracking-wider text-brand-gold">
-              BLACKLANEAUS
+            <a href="#" className="text-2xl font-bold tracking-wider text-black">
+              BLACKLANE
             </a>
           </div>
           <div className="hidden md:block">
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           <div className="hidden md:block">
             <a
               href="#booking"
-              className="bg-brand-gold text-brand-dark px-4 py-2 rounded-md text-sm font-bold hover:bg-yellow-300 transition-colors"
+              className="bg-black text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-gray-700 transition-colors"
             >
               Book Now
             </a>
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               type="button"
-              className="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-black hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-brand-gold"
+              className="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-black hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-black"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
              <a
               href="#booking"
               onClick={() => setIsMenuOpen(false)}
-              className="bg-brand-gold text-brand-dark block mx-4 px-4 py-2 rounded-md text-base font-bold text-center hover:bg-yellow-300 transition-colors"
+              className="bg-black text-white block mx-4 px-4 py-2 rounded-md text-base font-bold text-center hover:bg-gray-700 transition-colors"
             >
               Book Now
             </a>

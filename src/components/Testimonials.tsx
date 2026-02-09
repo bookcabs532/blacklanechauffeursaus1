@@ -23,7 +23,7 @@ const testimonials: Testimonial[] = [
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => (
   <div className="bg-white border border-gray-200 p-8 rounded-lg h-full flex flex-col justify-between shadow-md">
     <div>
-      <div className="text-brand-gold text-2xl mb-4">
+      <div className="text-black text-2xl mb-4">
         <i className="fas fa-quote-left"></i>
       </div>
       <p className="text-gray-700 italic mb-6">"{testimonial.quote}"</p>
@@ -40,7 +40,7 @@ const Testimonials: React.FC = () => {
     <section id="testimonials" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black font-serif">What Our Clients Say</h2>
           <p className="text-gray-700 mt-4 max-w-2xl mx-auto">
             Our reputation is built on the satisfaction and trust of our valued clients.
           </p>
