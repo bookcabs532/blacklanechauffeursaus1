@@ -7,15 +7,15 @@ const fleet: Vehicle[] = [
     className: 'Business Class',
     name: 'Mercedes-Benz E-Class or similar',
     description: 'The perfect choice for business travel and airport transfers, combining comfort and style.',
-    imageUrl: 'https://www.motortrend.com/uploads/2023/04/2024-Mercedes-Benz-E-Class-sedan-exterior-6.jpg',
+    imageUrl: '/Business-Class.png',
     passengers: 3,
     luggage: 2,
   },
   {
-    className: 'Luxury SUV',
+    className: 'Business Van',
     name: 'Audi Q7 or similar',
     description: 'Spacious and versatile, ideal for group travel, families, and those with extra luggage.',
-    imageUrl: 'https://picsum.photos/seed/audi-q7/800/600',
+    imageUrl: '/mercedes-vito.png',
     passengers: 5,
     luggage: 4,
   },
@@ -23,7 +23,7 @@ const fleet: Vehicle[] = [
     className: 'First Class',
     name: 'Mercedes-Benz S-Class or similar',
     description: 'Experience the pinnacle of luxury and sophistication. The ultimate choice for special occasions.',
-    imageUrl: 'https://picsum.photos/seed/mercedes-s-class/800/600',
+    imageUrl: '/First-Class.png',
     passengers: 3,
     luggage: 2,
   },
@@ -36,7 +36,6 @@ const FleetCard: React.FC<{ vehicle: Vehicle }> = ({ vehicle }) => (
     </div>
     <div className="p-6">
       <h3 className="text-2xl font-bold text-black">{vehicle.className}</h3>
-      <p className="text-black mb-4">{vehicle.name}</p>
       <p className="text-gray-700 mb-6">{vehicle.description}</p>
       <div className="flex items-center space-x-6 text-gray-700">
         <div className="flex items-center">

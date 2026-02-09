@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-white opacity-70 z-10"></div>
       <div className="absolute inset-0 z-0">
         <img
-          src="https://picsum.photos/seed/chauffeur/1920/1080"
+          src="/Background.JPG"
           alt="Luxury car in a city at night"
           className="w-full h-full object-cover"
         />
