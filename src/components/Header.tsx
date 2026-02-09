@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="bg-brand-dark bg-opacity-80 backdrop-blur-md sticky top-0 z-50">
+    <header className="bg-white bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:bg-gray-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   {link.name}
                 </a>
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               type="button"
-              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-black hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-brand-gold"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -71,13 +71,13 @@ const Header: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-gray-700 hover:bg-gray-100 hover:text-black block px-3 py-2 rounded-md text-base font-medium transition-colors"
               >
                 {link.name}
               </a>
             ))}
           </div>
-          <div className="pt-4 pb-3 border-t border-gray-700">
+          <div className="pt-4 pb-3 border-t border-gray-200">
              <a
               href="#booking"
               onClick={() => setIsMenuOpen(false)}

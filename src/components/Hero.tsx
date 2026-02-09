@@ -4,8 +4,8 @@ import BookingForm from './BookingForm';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative h-[90vh] min-h-[600px] flex items-center justify-center text-center text-white">
-      <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
+    <section id="hero" className="relative h-[90vh] min-h-[600px] flex items-center justify-center text-center text-black">
+      <div className="absolute inset-0 bg-white opacity-70 z-10"></div>
       <div className="absolute inset-0 z-0">
         <img
           src="https://picsum.photos/seed/chauffeur/1920/1080"

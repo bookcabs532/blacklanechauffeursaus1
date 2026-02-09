@@ -25,25 +25,25 @@ const benefits = [
 
 const BenefitCard: React.FC<{ icon: React.ReactNode; title: string; description: string }> = ({ icon, title, description }) => (
   <div className="flex items-start space-x-4">
-    <div className="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg bg-gray-800">
+    <div className="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg bg-gray-100">
       {icon}
     </div>
     <div>
-      <h3 className="text-lg font-bold text-white">{title}</h3>
-      <p className="mt-1 text-gray-400">{description}</p>
+      <h3 className="text-lg font-bold text-black">{title}</h3>
+      <p className="mt-1 text-gray-700">{description}</p>
     </div>
   </div>
 );
 
 const WhyChooseUs: React.FC = () => {
   return (
-    <section id="why-us" className="py-20 bg-brand-dark">
+    <section id="why-us" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-brand-gold font-semibold">THE BLACKLANEAUS DIFFERENCE</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mt-2 mb-6">Uncompromising Quality and Reliability</h2>
-            <p className="text-gray-400 mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mt-2 mb-6">Uncompromising Quality and Reliability</h2>
+            <p className="text-gray-700 mb-8">
               We are dedicated to providing a first-class experience from start to finish. Our commitment to excellence ensures every ride is a seamless journey tailored to your needs.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

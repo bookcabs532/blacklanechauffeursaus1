@@ -30,15 +30,15 @@ const fleet: Vehicle[] = [
 ];
 
 const FleetCard: React.FC<{ vehicle: Vehicle }> = ({ vehicle }) => (
-  <div className="bg-gray-900 rounded-lg overflow-hidden group">
+  <div className="bg-white border border-gray-200 rounded-lg overflow-hidden group shadow-md">
     <div className="overflow-hidden">
       <img src={vehicle.imageUrl} alt={vehicle.name} className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" />
     </div>
     <div className="p-6">
-      <h3 className="text-2xl font-bold text-white">{vehicle.className}</h3>
+      <h3 className="text-2xl font-bold text-black">{vehicle.className}</h3>
       <p className="text-brand-gold mb-4">{vehicle.name}</p>
-      <p className="text-gray-400 mb-6">{vehicle.description}</p>
-      <div className="flex items-center space-x-6 text-gray-300">
+      <p className="text-gray-700 mb-6">{vehicle.description}</p>
+      <div className="flex items-center space-x-6 text-gray-700">
         <div className="flex items-center">
           <i className="fas fa-users mr-2"></i>
           <span>{vehicle.passengers}</span>
@@ -55,11 +55,11 @@ const FleetCard: React.FC<{ vehicle: Vehicle }> = ({ vehicle }) => (
 
 const Fleet: React.FC = () => {
   return (
-    <section id="fleet" className="py-20 bg-gray-900">
+    <section id="fleet" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Our Premium Fleet</h2>
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">Our Premium Fleet</h2>
+          <p className="text-gray-700 mt-4 max-w-2xl mx-auto">
             Travel in the comfort and safety of our meticulously maintained, high-spec vehicles.
           </p>
         </div>
