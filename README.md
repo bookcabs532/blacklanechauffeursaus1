@@ -50,3 +50,7 @@ Pushing to `main` triggers GitHub Actions (`.github/workflows/deploy.yml`) which
 > **Note:** cPanel is only available with a hosting plan, not with domain-only purchases.
 
 - cPanel hosting plan has domain limit, if it support multiple, open existing cPanel and add domain
+
+
+blacklanechauffeur.com.au root path - /public_html/
+luxelitechauffeur.com.au root path - /public_html/luxelitechauffeur.com.au
