@@ -41,7 +41,7 @@ const WhyChooseUs: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-black font-semibold">THE BLACKLANE DIFFERENCE</span>
+            <span className="text-black font-semibold">THE LUXELITE DIFFERENCE</span>
             <h2 className="text-3xl md:text-4xl font-bold text-black mt-2 mb-6 font-serif">Uncompromising Quality and Reliability</h2>
             <p className="text-gray-700 mb-8">
               We are dedicated to providing a first-class experience from start to finish. Our commitment to excellence ensures every ride is a seamless journey tailored to your needs.

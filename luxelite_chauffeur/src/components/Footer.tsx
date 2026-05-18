@@ -6,11 +6,11 @@ const Footer: React.FC = () => {
       <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="col-span-2 lg:col-span-1 mb-8 md:mb-0">
-            <h3 className="text-xl font-bold text-brand-gold tracking-wider mb-4">BLACKLANEAUS</h3>
+            <h3 className="text-xl font-bold text-brand-gold tracking-wider mb-4">LUXELITE</h3>
             <p className="text-sm">Your Australian professional chauffeur service.</p>
             <div className="mt-6 mb-4">
-              <p className="text-sm"><strong>Phone:</strong> +61 417 833 137</p>
-              <p className="text-sm"><strong>Email:</strong> info@blacklanechauffeurs.com.au</p>
+              <p className="text-sm"><strong>Phone:</strong> +61 422 891 142</p>
+              <p className="text-sm"><strong>Email:</strong> info@luxelitechauffeur.com.au</p>
             </div>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-white transition-colors"><i className="fab fa-twitter fa-lg"></i></a>
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
            </div>
         </div>
         <div className="mt-16 pt-8 border-t border-gray-800 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} BLACKLANEAUS. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} LUXELITE. All rights reserved.</p>
         </div>
       </div>
     </footer>

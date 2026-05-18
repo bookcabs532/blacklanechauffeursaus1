@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 type RideType = 'one-way' | 'hourly';
 
 // Initialize EmailJS with your public key
-emailjs.init('mlywsDt9Mjrk166Dy');
+emailjs.init('01JbLd_tWSGf61WvK');
 
 const BookingForm: React.FC = () => {
   const [rideType, setRideType] = useState<RideType>('one-way');
@@ -47,9 +47,17 @@ const BookingForm: React.FC = () => {
         phone: formData.phone
       };
 
+      // Send booking notification to team
       await emailjs.send(
-        'service_7h348ek', // Service ID - replace with actual service ID
-        'template_6bmemfb', // Template ID
+        'service_c8lubhu',
+        'template_4lxm1va',
+        templateParams
+      );
+
+      // Send auto-reply to customer
+      await emailjs.send(
+        'service_c8lubhu',
+        'template_le1j8xo',
         templateParams
       );
 

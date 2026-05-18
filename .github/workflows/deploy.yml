@@ -7,8 +7,11 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  build-blacklane:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: blacklane_chauffeur
     
     steps:
     - name: Checkout Code
@@ -18,18 +21,86 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        cache: 'npm'
         
+    - name: Install pnpm
+      run: npm install -g pnpm@10.22.0
+      
     - name: Install Dependencies
-      run: npm ci
+      run: pnpm install --frozen-lockfile
       
     - name: Build Project
-      run: npm run build
+      run: pnpm run build
       
-    - name: Deploy to GitHub Pages
+    - name: Upload Blacklane Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: blacklane-dist
+        path: blacklane_chauffeur/dist/
+
+  build-luxelite:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: luxelite_chauffeur
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install pnpm
+      run: npm install -g pnpm@10.22.0
+      
+    - name: Install Dependencies
+      run: pnpm install --frozen-lockfile
+      
+    - name: Build Project
+      run: pnpm run build
+      
+    - name: Upload Luxelite Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: luxelite-dist
+        path: luxelite_chauffeur/dist/
+
+  deploy-blacklane:
+    needs: build-blacklane
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Download Blacklane Artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: blacklane-dist
+        path: ./dist
+        
+    - name: Deploy Blacklane to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
         cname: www.blacklanechauffeurs.com.au
+
+  deploy-luxelite:
+    needs: build-luxelite
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Download Luxelite Artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: luxelite-dist
+        path: ./dist
+        
+    - name: Deploy Luxelite to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        cname: luxelitechauffeur.com.au

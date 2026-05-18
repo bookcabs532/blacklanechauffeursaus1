@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <a href="#" className="text-black flex flex-col leading-none">
-              <span className="text-2xl font-bold tracking-wider">BLACKLANE</span>
+              <span className="text-2xl font-bold tracking-wider">LUXELITE</span>
               <span className="text-xs font-medium text-gray-600 tracking-wide self-end">Australia</span>
             </a>
           </div>
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
             <div className="flex items-center space-x-2 text-gray-700">
               <span className="font-medium">Contact Us:</span>
               <i className="fas fa-phone"></i>
-              <a href="tel:0417833137" className="hover:text-black transition-colors font-semibold">0417 833 137</a>
+              <a href="tel:0422891142" className="hover:text-black transition-colors font-semibold">0422 891 142</a>
             </div>
           </div>
           <div className="hidden md:block">
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
               <div className="flex items-center space-x-2 text-gray-700">
                 <span className="font-medium">Contact Us:</span>
                 <i className="fas fa-phone"></i>
-                <a href="tel:0417833137" className="hover:text-black transition-colors font-semibold">0417 833 137</a>
+                <a href="tel:0422891142" className="hover:text-black transition-colors font-semibold">0422 891 142</a>
               </div>
             </div>
              <a
