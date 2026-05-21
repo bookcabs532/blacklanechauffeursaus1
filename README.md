@@ -54,6 +54,9 @@ Output goes to `dist/`.
 Pushing to `main` triggers GitHub Actions (`.github/workflows/deploy.yml`) which builds both projects and deploys to GitHub Pages with the appropriate CNAME.
 
 ### FTP Deploy (GoDaddy/cPanel)
+CPANEL password reset: https://host.godaddy.com/webhosting/cpanel/account/b6400b77-d298-11f0-86c6-7cd30aba5ed4/settings
+FILE manager: https://sg2plzcpnl509421.prod.sin2.secureserver.net:2083/cpsess0186015330/frontend/jupiter/filemanager/index.html?login=1&post_login=43704466738608
+FTP manager: https://sg2plzcpnl509421.prod.sin2.secureserver.net:2083/cpsess0186015330/frontend/jupiter/ftp/accounts.html?login=1&post_login=91422506234666
 
 Both sites are hosted on the same cPanel account. The folder structure on the server is:
 
