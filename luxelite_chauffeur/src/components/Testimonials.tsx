@@ -50,6 +50,12 @@ const Testimonials: React.FC = () => {
             <TestimonialCard key={index} testimonial={testimonial} />
           ))}
         </div>
+        <div className="text-center mt-12">
+          <div className="text-yellow-500 text-2xl mb-2">★★★★★</div>
+          <p className="text-lg md:text-xl font-semibold text-black">
+            Travel In Style With Luxelite Chauffeur Service Trusted By Top Brands
+          </p>
+        </div>
       </div>
     </section>
   );

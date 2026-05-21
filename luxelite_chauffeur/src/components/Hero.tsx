@@ -15,10 +15,10 @@ const Hero: React.FC = () => {
       </div>
       <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col items-center">
         <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight mb-4 font-serif">
-          Your Professional Chauffeur Service
+          Australia's Chauffeur Service
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mb-8">
-			Travel In Style With Luxelite Chauffeur Service Trusted By Top Brands.
+			Experience the Luxelite difference with premium transfers, tours and event transport.
         </p>
         <div className="w-full max-w-4xl">
           <BookingForm />

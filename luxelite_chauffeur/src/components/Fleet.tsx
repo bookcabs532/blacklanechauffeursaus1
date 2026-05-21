@@ -12,7 +12,7 @@ const fleet: Vehicle[] = [
     luggage: 2,
   },
   {
-    className: 'Business Van',
+    className: 'Mercedes V-Class',
     name: 'Audi Q7 or similar',
     description: 'Spacious and versatile, ideal for group travel, families, and those with extra luggage.',
     imageUrl: '/mercedes-vito.png',

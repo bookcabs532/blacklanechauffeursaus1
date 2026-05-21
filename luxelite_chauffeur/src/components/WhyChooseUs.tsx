@@ -9,7 +9,7 @@ const benefits = [
   {
     icon: <i className="fas fa-tags text-black text-2xl"></i>,
     title: 'All-Inclusive Rates',
-    description: 'Your rate is confirmed before you book, and includes all taxes, fees, and gratuities.',
+    description: 'Your rate is confirmed before you book.',
   },
   {
     icon: <i className="fas fa-user-tie text-black text-2xl"></i>,
