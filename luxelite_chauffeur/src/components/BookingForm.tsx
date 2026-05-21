@@ -189,14 +189,14 @@ const BookingForm: React.FC = () => {
         {/* Contact information */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div>
-            <label htmlFor="name" className="block text-xs font-medium text-gray-300 mb-1">FULL NAME</label>
+            <label htmlFor="name" className="block text-xs font-medium text-gray-300 mb-1">Name</label>
             <input
               type="text"
               id="name"
               name="name"
               value={formData.name}
               onChange={handleInputChange}
-              placeholder="Your full name"
+              placeholder="Your name"
               className="w-full bg-gray-800 border border-gray-600 rounded-md p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-gold"
               required
             />
